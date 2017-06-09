@@ -11,10 +11,10 @@ In `quotes.html` you will need to build a simple [Backbone.js](http://backbonejs
 
 Please provide the following functionality:
 
- * Fetch quotes from the source [quotes.json](https://gist.githubusercontent.com/anonymous/8f61a8733ed7fa41c4ea/raw/1e90fd2741bb6310582e3822f59927eb535f6c73/quotes.json) and display the available information in a list-like structure (table/list)
- * Provide client-side pagination (up to 15 quotes per page)
- * Optionally: Provide a way to filter between game and movie quotes
- * Optionally: Provide a client-side search that filters by the quote text
+ * Required: Fetch quotes from the source [quotes.json](https://gist.githubusercontent.com/anonymous/8f61a8733ed7fa41c4ea/raw/1e90fd2741bb6310582e3822f59927eb535f6c73/quotes.json) and display the available information in a list-like structure (table/list)
+ * Required: Provide client-side pagination (up to 15 quotes per page)
+ * Optional: Provide a way to filter between game and movie quotes
+ * Optional: Provide a client-side search that filters by the quote text
 
 Please use your discretion in implementing the optional, nice-to-have features (if interested).
 
@@ -39,7 +39,7 @@ You will need to implement the following functionality:
 
 Please use your discretion in fixing/adding tests. You are free to use/convert to any testing framework you want.
 
-**Bonus:**
+**Optional:**
 
  * Simulate a random round of the game (you don't have to write educated player decision logic - it could be just guesses)
 
