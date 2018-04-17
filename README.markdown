@@ -5,9 +5,11 @@ If you have any questions, feel free to email developers@benchprep.com
 
 ## JavaScript/CoffeeScript
 
-### Simple Backbone.js List
+### Simple React.js List
 
-In `quotes.html` you will need to build a simple [Backbone.js](http://backbonejs.org/) view to list the given quotes. Please do not use any libraries or plugins to do this other than [jQuery](https://jquery.com/), [Backbone.js](http://backbonejs.org/), and [underscore.js](http://underscorejs.org/).
+In `quotes.html` you will need to build a simple [React.js](https://reactjs.org/) view to list the given quotes. Please do not use any libraries or plugins to do this other than [jQuery](https://jquery.com/), [React.js](https://reactjs.org/), and [underscore.js](http://underscorejs.org/).
+
+If you prefer to use a package manager, we recommend to use Yarn.
 
 Please provide the following functionality:
 
