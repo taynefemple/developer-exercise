@@ -1,15 +1,23 @@
-Please fork the repository and complete all of the following exercises.
-When you are finished, submit a pull request for review.
+Please complete all of the following exercises. When you are finished, please
+zip up the exercises and email as an attachment to developers@benchprep.com
 
-If you have any questions, feel free to email developers@benchprep.com
+If you have any questions, feel free to email your hiring facilitator.
 
 ## JavaScript/CoffeeScript
 
 ### Simple React.js List
 
-In `quotes.html` you will need to build a simple [React.js](https://reactjs.org/) view to list the given quotes. Please do not use any libraries or plugins to do this other than [jQuery](https://jquery.com/), [React.js](https://reactjs.org/), and [underscore.js](http://underscorejs.org/).
+For this exercise, you will need to build a simple React.js view to list the
+given quotes. Please keep your library usage to the minimum, you can use
+[jQuery](https://jquery.com/), [underscore.js](http://underscorejs.org/),
+and [React.js](https://reactjs.org/).
 
-If you prefer to use a package manager, we recommend to use Yarn.
+You should be able to get started with the `quotes.html` provided but feel free
+to use [create-react-app](https://github.com/facebook/create-react-app#create-react-app-)
+to bootstrap your application.
+
+You are also welcome to use your own implementation of babel & webpack but is
+not required for this exercise.
 
 Please provide the following functionality:
 
@@ -24,7 +32,9 @@ Please use your discretion in implementing the optional, nice-to-have features (
 
 ### Array extension
 
-Please write a module that gives `where` behavior to an array of hashes. (See `test.rb` and make it pass, or feel free to convert the tests to your favorite test framework.)
+Please write a module that gives `where` behavior to an array of hashes. (See
+`test.rb` and make it pass, or feel free to convert the tests to your favorite
+test framework.)
 
 ### Simplified Blackjack
 
