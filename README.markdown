@@ -1,5 +1,5 @@
 Please complete all of the following exercises. When you are finished, please
-zip up the exercises and email as an attachment to developers@benchprep.com
+zip up the exercises and email as an attachment once completed to developers@benchprep.com
 
 If you have any questions, feel free to email your hiring facilitator.
 
