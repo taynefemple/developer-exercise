@@ -1,4 +1,4 @@
-Please complete all of the following exercises.  When you are finished, zip up the exercises and email as an attachment to developers@benchprep.com.  Incomplete exercises will not be reviewed.
+Please complete all of the following exercises.  When you are finished, zip up the exercises and email as an attachment to developers@benchprep.com.  Incomplete exercises will not be reviewed.  Do not include your `node_modules` directory.
 
 If you have any questions, feel free to email your hiring facilitator.
 
