@@ -2,21 +2,18 @@ Please complete all of the following exercises.  When you are finished, zip up t
 
 If you have any questions, feel free to email your hiring facilitator.
 
-## JavaScript/CoffeeScript
+## JavaScript
 
-### Simple React.js List
+### Simple Vue.js List
 
-For this exercise, you will need to build a simple React.js view to list the
-given quotes. Please keep your library usage to the minimum, you can use
-[jQuery](https://jquery.com/), [underscore.js](http://underscorejs.org/),
-and [React.js](https://reactjs.org/).
+For this exercise, you will need to build a simple Vue.js app to list the
+given quotes. Please do not use any libraries or plugins to do this other
+than the core [Vue.js](https://vuejs.org/) and, optionally, a library to fetch
+the quotes.
 
-You should be able to get started with the `quotes.html` provided but feel free
-to use [create-react-app](https://github.com/facebook/create-react-app#create-react-app-)
-to bootstrap your application.
-
-You are also welcome to use your own implementation of babel & webpack but is
-not required for this exercise.
+You can assume that you only need to support modern web browsers, so feel
+free to build the app using either the new ECMAScript 6 or the older ECMAScript 5
+("plain" JavaScript) standard.
 
 Please provide the following functionality:
 
