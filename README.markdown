@@ -1,3 +1,18 @@
+Notes on list_app/quotecheetah functionality
+
+- Select category from dropdown to sort quotes by category
+
+- Search quotes in the search bar. Quotes will filter as you type. If you have a category selected, the searchbar will only search within that category. Selecting a different category will reset the search bar.
+
+Notes on blackjack
+
+-Run all tests with ruby tests/run_test.rb
+
+-To begin blackjack simulation: ruby blackjack.rb -- Careful, it's addictive... if you love a good CLI game check out
+https://github.com/taynefemple/fortuneTeller
+
+________________________________________________________________________________________________________________
+
 Please complete all of the following exercises.  When you are finished, zip up the exercises and email as an attachment to your hiring facilitator.  Incomplete exercises will not be reviewed.  Do not include your `node_modules` directory.
 
 If you have any questions, feel free to email your hiring facilitator.
