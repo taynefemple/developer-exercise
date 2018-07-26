@@ -3,8 +3,11 @@ require './hand.rb'
 require './player.rb'
 
 class Dealer
-  def initalize(deck)
+  attr_reader :dealer_hand
+
+  def initialize(deck)
     @deck = deck
+    @turn = false
   end
 
   def deal
@@ -12,19 +15,27 @@ class Dealer
     @player_hand = Hand.new
 
     2.times do
-      [@player_hand, @dealer_hand].each { |hand| hand << deal_card }
+      [@player_hand, @dealer_hand].each { |hand| hand.cards << deal_card }
     end
 
-    return unless @player_hand.blackjack? || @dealer_hand.blackjack?
+    return @player_hand unless @player_hand.blackjack? || @dealer_hand.blackjack?
+
     blackjack_on_deal
     game_outcome
+
+    #this hand is returned solely for testing purposes
+    @player_hand
   end
 
   def take_turn
-    if @dealer_hand.value >= 17
-      game_outcome
-    else
-      @dealer_hand << deal_card
+    @turn = !@turn
+    while @turn
+      if @dealer_hand.value >= 17
+        @turn = !@turn
+        game_outcome
+      else
+        @dealer_hand.cards << deal_card
+      end
     end
   end
 
@@ -33,22 +44,24 @@ class Dealer
   end
 
   def up_card
-    @dealer_hand[0]
+    @dealer_hand.cards[0]
   end
 
   def game_outcome
     if @player_hand.blackjack?
-      puts 'Play again and let it ride!'
+      puts "Make it rain!!! \n\n"
+    elsif @dealer_hand.blackjack?
+      puts "Tough luck. The house always wins... \n\n"
     elsif @player_hand.bust?
-      puts 'Bust! You lose...'
+      puts "Bust! You lose with #{@player_hand.value}! \n\n"
     elsif @dealer_hand.bust?
-      puts 'Player wins'
-    elsif @player_hand < @dealer_hand
-      puts "Dealer wins with #{@dealer_hand}"
-    elsif @dealer_hand == @player_hand
-      puts "Dealer has #{@dealer_hand}. Push."
+      puts "The dealer has busted with #{dealer_hand.value}! \n\nPlayer wins with #{@player_hand.value}! \n\n"
+    elsif @player_hand.value < @dealer_hand.value
+      puts "Dealer wins with #{@dealer_hand.value}! \n\n"
+    elsif @dealer_hand.value == @player_hand.value
+      puts "Dealer stands at #{@dealer_hand.value}.\n Push! \n   ---Just like losing, but with less shame...\n\n"
     else
-      puts "Dealer has #{@dealer_hand}. Player wins!"
+      puts "Dealer stands at #{@dealer_hand.value}.\n\nPlayer wins with #{@player_hand.value}! \n\n"
     end
   end
 

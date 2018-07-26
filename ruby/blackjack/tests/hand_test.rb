@@ -20,21 +20,30 @@ class HandTest < Test::Unit::TestCase
   end
 
   def test_hand_value_with_high_ace
+    @hand.cards << Card.new(:spade, :ace, [1, 11])
+    @hand.cards << Card.new(:heart, :two, 2)
+    assert_equal @hand.value, 13
   end
 
   def test_hand_value_with_low_ace
+    @hand.cards << Card.new(:spade, :ace, [1, 11])
+    @hand.cards << Card.new(:heart, :king, 10)
+    @hand.cards << Card.new(:heart, :three, 3)
+    assert_equal @hand.value, 14
   end
 
   def test_hand_value_with_multiple_aces
+    @hand.cards << Card.new(:spade, :ace, [1, 11])
+    @hand.cards << Card.new(:heart, :seven, 7)
+    @hand.cards << Card.new(:heart, :ace, [1, 11])
+    assert_equal @hand.value, 19
   end
 
   def test_hand_is_bust
+    hand = Hand.new
+    hand.cards << Card.new(:spade, :four, 4)
+    hand.cards << Card.new(:heart, :ten, 10)
+    hand.cards << Card.new(:diamond, :eight, 8)
+    assert hand.bust?
   end
-
-  def test_bust_with_low_ace
-  end
-
-  def test_bust_with_multiple_aces
-  end
-
 end

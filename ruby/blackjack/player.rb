@@ -1,5 +1,5 @@
 class Player
-  attr_reader :hand # now hand is available
+  attr_accessor :hand
 
   def initialize(dealer)
     @dealer = dealer
@@ -28,7 +28,7 @@ class Player
   end
 
   def hit
-    @hand << @dealer.deal_card
+    @hand.cards << @dealer.deal_card
   end
 
   def stand
