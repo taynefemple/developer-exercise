@@ -1,5 +1,5 @@
 class Player
-  attr_reader :hand
+  attr_reader :hand # now hand is available
 
   def initialize(dealer)
     @dealer = dealer
@@ -19,7 +19,8 @@ class Player
   def hit_or_stand?
     if dealers_advantage || weak_hands
       hit
-      if @hand.bust? @dealer.game_outcome
+      if @hand.bust?
+        @dealer.game_outcome
       end
     else
       stand

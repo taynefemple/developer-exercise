@@ -3,9 +3,6 @@ require_relative '../hand.rb'
 require_relative '../card.rb'
 
 class HandTest < Test::Unit::TestCase
-  include Enumerable
-  include Comparable
-
   def setup
     @hand = Hand.new
   end
@@ -19,7 +16,7 @@ class HandTest < Test::Unit::TestCase
   def test_hand_is_blackjack
     @hand.cards << Card.new(:spade, :ace, [1, 11])
     @hand.cards << Card.new(:heart, :ten, 10)
-    assert_operator (@hand.blackjack?, ==, true)
+    assert @hand.blackjack?
   end
 
   def test_hand_value_with_high_ace

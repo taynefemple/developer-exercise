@@ -1,6 +1,8 @@
 require './card.rb'
 
 class Hand
+  attr_reader :cards
+
   include Enumerable
 
   def initialize
@@ -9,7 +11,7 @@ class Hand
 
   def value
     sort!
-    @cards.reduce do |sum, card|
+    @cards.reduce(0) do |sum, card|
       if card.name != :ace
         sum + card.value
       elsif sum + 11 > 21
@@ -18,10 +20,6 @@ class Hand
         sum + 11
       end
     end
-  end
-
-  def cards
-    @cards
   end
 
   def card_count

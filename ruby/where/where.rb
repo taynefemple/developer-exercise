@@ -1,15 +1,23 @@
 
 module Whereable
-  def where(args)
-    args.each do |arg_key, arg_val|
-      self.keep_if do |person|
-        if arg_val.is_a?(Numeric)
-          arg_val == person[arg_key]
-        else arg_val.match(person[arg_key])
-        end
+  def where(match_items)
+    @matching = self.clone
+    match_items.each do |key, search_val|
+      @matching.keep_if do |el|
+        evaluate_match(search_val, el[key])
       end
     end
-    self
+    @matching
+  end
+
+  private
+
+  def evaluate_match(search_val, hash_value)
+    if search_val.is_a?(Numeric)
+      search_val == hash_value
+    else
+      search_val.match(hash_value)
+    end
   end
 end
 
