@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../blackjack.rb'
+require_relative '../deck.rb'
 
 class DeckTest < Test::Unit::TestCase
   def setup

@@ -9,7 +9,7 @@ class PlayerTest < Test::Unit::TestCase
 
   def test_2_cards_dealt_at_start
     @player.deal_me_in
-    assert_equal @player.hand.count, 2
+    assert_equal @player_hand.count, 2
   end
 
   def test_player_sees_dealers_up_card
