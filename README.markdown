@@ -6,9 +6,15 @@ Notes on list_app/quotecheetah functionality
 
 Notes on blackjack
 
+<<<<<<< HEAD
 - Run all tests with ruby tests/run_test.rb
 
 - To begin blackjack simulation: ruby blackjack.rb -- Careful, it's addictive... if you love a good CLI game check out
+=======
+-Run all tests with ruby tests/run_test.rb
+
+-To begin blackjack simulation: ruby blackjack.rb -- Careful, it's addictive... if you love a good CLI game check out
+>>>>>>> 3634ab33b4ce1c59101b84bdae6a56cd062c71b2
 https://github.com/taynefemple/fortuneTeller
 
 ________________________________________________________________________________________________________________
