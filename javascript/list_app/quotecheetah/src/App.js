@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './public/stylesheets/App.css';
-import { Pagination, Header, RenderQuotes } from './components/index';
+import './stylesheets/App.css';
+import { Pagination, Header, RenderQuotes } from './components';
 
 class App extends Component {
   constructor(props) {
@@ -56,6 +56,7 @@ class App extends Component {
     }
 
     const searchedQuotes = filteredQuotes.filter(quote => quote.quote.toLowerCase().indexOf(evt.target.value) !== -1);
+
     this.setState({ search: evt.target.value, selectedQuotes: searchedQuotes });
   }
 
@@ -64,7 +65,6 @@ class App extends Component {
     const { currentPage, quotesPerPage, selectedQuotes } = this.state;
 
     return (
-
       <div className="App">
         <Header
           onSelect={this.handleChange} category={this.state.category} onChange={this.handleSearch} search={this.state.search} />

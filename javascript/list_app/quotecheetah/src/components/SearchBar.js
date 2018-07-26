@@ -8,7 +8,7 @@ const SearchBar = (props) => {
     <form>
       <input onChange={onChange} placeholder="Search Quotes" value={search} />
     </form>
-  )
+  );
 };
 
 export default SearchBar;

@@ -1,7 +1,6 @@
 import React from 'react';
-import CategoryDropdown from './CategoryDropdown'
-import SearchBar from './SearchBar'
-
+import CategoryDropdown from './CategoryDropdown';
+import SearchBar from './SearchBar';
 
 const Header = (props) => {
 

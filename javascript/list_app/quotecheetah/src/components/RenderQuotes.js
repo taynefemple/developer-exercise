@@ -31,7 +31,7 @@ const RenderQuotes = (props) => {
         </tbody>
       </table>
     </div>
-  )
+  );
 };
 
 export default RenderQuotes;
