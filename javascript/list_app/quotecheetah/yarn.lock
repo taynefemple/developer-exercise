@@ -2281,9 +2281,9 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-config-fullstack@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-fullstack/-/eslint-config-fullstack-5.0.0.tgz#9e5b21fcdb89940f81aa216f25f7dbb6b27961e3"
+eslint-config-fullstack@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-fullstack/-/eslint-config-fullstack-6.0.0.tgz#77be752cbda6b03708e348ea9466e7679b5b85ff"
 
 eslint-config-react-app@^2.1.0:
   version "2.1.0"

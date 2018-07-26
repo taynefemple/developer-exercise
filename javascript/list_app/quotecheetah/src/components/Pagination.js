@@ -17,6 +17,6 @@ const Pagination = (props) => {
       {renderPageNumbers}
     </div>
   );
-}
+};
 
-export default Pagination
+export default Pagination;
