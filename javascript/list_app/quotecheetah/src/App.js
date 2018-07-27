@@ -9,7 +9,7 @@ class App extends Component {
     this.state = {
       allQuotes: [],
       selectedQuotes: [],
-      category: 'All Quotes',
+      category: 'quotes',
       currentPage: 1,
       quotesPerPage: 15,
       search: '',
